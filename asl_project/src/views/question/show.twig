@@ -1,0 +1,15 @@
+{% extends 'layouts/_default.twig' %}
+
+{% block main_content %}
+
+    <div>
+        <h1>{{ quest.quest }}</h1>
+        <p><strong>ID: </strong>{{quest.id}}</p>
+        <p><strong>Created at: </strong>{{quest.createdAt}}</p>
+        <p><strong>Updated last: </strong>{{quest.updatedAt}}</p>
+        <p>
+            <a href="/question/{{ quest.id }}/delete">Delete</a>
+        </p>
+    </div>
+
+{% endblock %}
